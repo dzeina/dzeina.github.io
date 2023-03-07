@@ -1,0 +1,175 @@
+Title: "Multifaceted Engagement of BSc Students in Computer Science Research"
+
+Date: December 15, 2015
+Time: 09:00 - 09:45
+Place: Room 105, Social Facilities Centre, University Campus
+
+Abstract: 
+=========
+Research entails a deep systematic investigation of sources in order to reach new, previously unknown conclusions. In Computer Science, these conclusions are often in the form of algorithmic developments or in the form of software artifacts tackling unconventional, real-life challenges. In both cases, the conclusions have to be publishable at high caliber journals, conferences or competitions, such that the credibility of the developments is externalized and recognized by the wider research community.
+
+While the above type of research is a fundamental attribute of postgraduate studies, undergraduate students are often not part of this process for a variety of reasons, including: i) lack of advanced domain knowledge (usually taught at the post-graduate level); ii) lack of mathematical or laboratory skills (e.g., proving a theorem or managing a complex software stack); and iii) lack of writing and presentation skills (i.e., the dissertation is written at the end of their studies).
+
+During the last decade, I have applied a wide range of empirical methods to engage undergraduate students in research as soon as they are admitted to the University. Particularly, students have been encouraged through a variety of methods to familiarize themselves with research through our courses and become active contributors to our quest for academic excellence. The applied methods have had some very promising results, particularly: i) several summer research internships since 2012 (for 1st year BSc students); ii) several research interviews available on Youtube since 2014 (for 2nd year BSc students); iii) 5 distinctions in the Intl. ACM SIGMOD programming competition since 2010 (for 3rd year BSc students); iv) 21 journal and conference proceedings since 2007 (for 4th year BSc students); and v) 3 international awards for innovative research systems since 2007 (again for 3rd and 4th year students).
+
+In the scope of my case study, I will detail the applied methodology for each different type of activitity and also summarize the lessons learnt. I claim that the provided achievements have helped our undergraduate students to reach their personal goals and our Data Management Systems Laboratory (DMSL) to meet its research agenda. Particularly, the above engagement allowed 6 students to obtain fellowships for graduate studies (e.g., Fulbright, Oxford), 5 students to advance to PhD programs, while all of them have moved on with MSc studies in the US, UK, Canada and Switzerland.
+
+A. Awards (with participation of 4th Year BSc Students)
+========================================================
+- 1st Position, ``Indoor Geolocation for Android Smartphones with Airplace'', T. Costambeys, C. Laoudias, D. Zeinalipour-Yazti, C. G. Panayiotou, EVARILOS Open Challenge, FP7 Project (#317989), European Union, Berlin, Germany, 2014.
+
+    Note: Timotheos Constambeys has carried out his B.Sc. thesis under my supervision. 
+
+- Best Demo Award, ``The Airplace Indoor Positioning Platform for Android Smartphones'', C. Laoudias, G. Constantinou, M. Constantinides, S. Nicolaou, D. Zeinalipour-Yazti, C. G. Panayiotou, Demo at the 13th IEEE International Conference on Mobile Data Management (MDM 2012), IEEE Computer Society, Bangalore, India, July 23-26, 2012.
+
+    Note: This award stems from the EPL371 - Systems Programming course project that Georgios Constantinou, Marios Constantinides, Silouanos Nicolaou have implemented in 2011.
+
+- Best Demo Award, ``ICGrid: Intensive Care Grid'', CoreGRID Industrial Conference, Sophia Antipolis, France, Nov 2006.
+
+    Note: Marios Papas has been a B.Sc. research advisee. He is now a Postdoc at Disney Research Zurich, Switzerland.
+
+B. Publications (with participation of 4th Year BSc Students)
+=============================================================
+
+[J20] "Internet-based Indoor Navigation Services", Demetrios Zeinalipour-Yazti, Christos Laoudias, Kyriakos Georgiou and Georgios Chatzimiloudis IEEE Internet Computing (IC '16), IEEE Press, Vol. xx, Iss. x, pp. xx-xx, 2016.  
+
+    Note: Kyriakos Georgiou has carried out his B.Sc. thesis under my supervision. He is now an MSc student at the University of Toronto, Canada.
+
+[J19] "Privacy-Preserving Indoor Localization on Smartphones", Andreas Konstantinidis, Georgios Chatzimilioudis, Demetrios Zeinalipour-Yazti, Paschalis Mpeis, Nikos Pelekis and Yannis Theodoridis IEEE Transactions on Knowledge and Data Engineering (TKDE '15), IEEE Computer Society, Vol. 27, Iss. 11, pp. 3042-3055, Los Alamitos, CA, USA, 2015.
+
+    Note: Paschalis Mpeis has been my B.Sc. thesis advisee. He is now a PhD student at the Univ. of Edinburgh, UK.
+
+[C59] "Radiomap Prefetching for Indoor Navigation in Intermittently Connected Wi-Fi Networks", Andreas Konstantinidis, George Nikolaides, Georgios Chatzimilioudis, Giannis Evagorou, Demetrios Zeinalipour-Yazti and Panos K. Chrysanthis "Proceedings of the 16th IEEE International Conference on Mobile Data Management" (MDM '15), IEEE Press, Vol. 1, pp. 34-43, Pittsburgh, PA, USA, 2015.
+
+    Note: Giannis Evagorou has carried out his B.Sc. thesis under my supervision. He is now a PhD student at Imperial College London, UK.
+    
+[C58] "Rayzit: An Anonymous and Dynamic Crowd Messaging Architecture", Constantinos Costa, Chrysovalantis Anastasiou, Georgios Chatzimilioudis and Demetrios Zeinalipour-Yazti "Proceedings of the 3rd IEEE International Workshop on Mobile Data Management, Mining, and Computing on Social Networks, collocated with IEEE MDM '15" (Mobisocial '15), Vol. 2, pp. 98-103, Pittsburgh, PA, USA, 2015.
+
+    Note: Chrysovalantis Anastasiou has carried out his B.Sc. thesis under my supervision. He is now an MSc Fulbright fellow at the University of Southern California, USA.
+    
+[C57] "Scalable Mockup Experiments on Smartphones using SmartLab", Georgios Larkou, Marios Mintzis, Panayiotis G. Andreou, Andreas Konstantinidis and Demetrios Zeinalipour-Yazti "Proceedings of the 16th IEEE International Conference on Mobile Data Management" (MDM '15), IEEE Press, Vol. 2, pp. 287-290, 2015.
+
+    Note: Marios Mintzis has carried out his B.Sc. thesis under my supervision. He is now an MSc student at the University College London, UK.
+    
+[C56] "Anyplace: A Crowdsourced Indoor Information Service", Kyriakos Georgiou, Timotheos Constambeys, Christos Laoudias, Lambros Petrou, Georgios Chatzimilioudis and Demetrios Zeinalipour-Yazti "Proceedings of the 16th IEEE International Conference on Mobile Data Management" (MDM '15), IEEE Press, Vol. 2, pp. 291-294, 2015.
+
+    Note: Lambros Petrou and Timotheos Constambeys have carried out their B.Sc. thesis under my supervision. Petrou has been an Oxford Fellow at Oxford University, UK.
+
+[C50] "Indoor Positioning and Navigation in the Big-Data Era", Lambros Petrou, Georgios Larkou, Christos Laoudias, Demetrios Zeinalipour-Yazti and Christos G. Panayiotou "Proceedings of the 4th Intl. Conference on Indoor Positioning and Indoor Navigation" (IPIN '13), Montbeliard-Belfort, France 2013.
+
+    Note: Lambros Petrou has carried out his B.Sc. thesis under my supervision. He has been an Oxford Fellow at Oxford University, UK.
+
+[J18] "Managing big data experiments on smartphones", Georgios Larkou, Marios Mintzis, Panayiotis G. Andreou, Andreas Konstantinides and Demetrios Zeinalipour-Yazti Distributed and Parallel Databases (DAPD '14), Springer US, Vol. , Iss. , pp. 1-32, 2014.    
+
+    Note: Marios Mintzis has carried out his B.Sc. thesis under my supervision. He is now an MSc student at UCL, UK.
+
+[J16] "Crowdsourced trace similarity with smartphones", Demetrios Zeinalipour-Yazti, Christos Laoudias, Constandinos Costa, Michail Vlachos, Maria I. Andreou and Dimitrios Gunopulos IEEE Transactions on Knowledge and Data Engineering (TKDE '13), IEEE Computer Society, Vol. 25, Iss. 6, pp. 1240-1253, Los Alamitos, CA, USA, 2013. 
+
+    Note: Constantinos Costa has carried out his B.Sc. thesis under my supervision. He is now a PhD student at the Univ. of Cyprus, Cyprus.
+
+[C46] "CLODA: A Crowdsourced Linked Open Data Architecture", Georgios Larkou, Julia Metochi, Georgios Chatzimilioudis and Demetrios Zeinalipour-Yazti "Proceedings of the 1st IEEE International Workshop on Mobile Data Management, Mining, and Computing on Social Networks" (Mobisocial '13), Milan, Italy Vol. 2, pp. 104-109, 2013.
+
+    Note: Julia Metochi has carried out her B.Sc. thesis under my supervision.
+
+[J11]  "Optimized query routing trees for wireless sensor networks", Panayiotis Andreou, Demetrios Zeinalipour-Yazti, Andreas Pamboris, Panos K. Chrysanthis and George Samaras Information Systems (InfoSys '11), Elsevier Science Ltd., Vol. 36, Iss. 2, pp. 267-291, Oxford, UK, 2011.
+
+    Note: Andreas Pamboris has been a B.Sc. research advisee. He got his PhD from Imperial, UK and his MSc from UCSD, USA.
+
+[C42] "The Airplace Indoor Positioning Platform for Android Smartphones", Christos Laoudias, Georgios Constantinou, Marios Constantinides, Silouanos Nicolaou, Demetrios Zeinalipour-Yazti, Christos G. Panayiotou "Proceedings of the 13th IEEE International Conference on Mobile Data Management" (MDM '12), IEEE Computer Society, pp. 312-315, Bangalore, India, ISBN: 978-0-7695-4713-8, 2012.[ Best Demo Award! ],
+
+    Note: Georgios Constantinou, Marios Constantinides, Silouanos Nicolaou were students of the EPL371 - Systems Programming course I taught in 2011.
+
+[C41] "SmartP2P: A Multiobjective Framework for Finding Social Content in P2P Smartphone Networks", Andreas Konstantinidis, Christos Aplitsiotis, Demetrios Zeinalipour-Yazti "Proceedings of the 13th IEEE International Conference on Mobile Data Management" (MDM '12), IEEE Computer Society, pp. 324-327, Bangalore, India, ISBN: 978-0-7695-4713-8, 2012.
+
+    Note: Christos Aplitsiotis has carried out his B.Sc. thesis under my supervision.
+
+[C40] "Towards planet-scale localization on smartphones with a partial radiomap", Andreas Konstantinidis, Georgios Chatzimilioudis, Christos Laoudias, Silouanos Nicolaou and Demetrios Zeinalipour-Yazti "Proceedings of the 4th ACM international workshop on Hot topics in planet-scale measurement" (HotPlanet '12), in conjunction with MobiSys '12, ACM, pp. 9-14, New York, NY, USA, ISBN: 978-1-4503-1318-6, 2012.
+
+    Note: Silouanos Nicolaou has carried out his B.Sc. thesis under my supervision.
+    
+[c39] "Demo: the airplace indoor positioning platform", Christos Laoudias, Georgios Constantinou, Marios Constantinides, Silouanos Nicolaou, Demetrios Zeinalipour-Yazti and Christos G. Panayiotou "Proceedings of the 10th International Conference on Mobile Systems, Applications and Services" (Mobisys '12), pp. 467-468, Low Wood Bay, Lake District UK, June 25 - 29, ISBN: 978-1-4503-1301-8, 2012.
+
+    Note: Georgios Constantinou, Marios Constantinides, Silouanos Nicolaou were students of the EPL371 - Systems Programming course I taught in 2011.
+
+[C33] "A Platform for the Evaluation of Fingerprint Positioning Algorithms on Android Smartphones", Christos Laoudias, Georgios Constantinou, Marios Constantinides, Silouanos Nicolaou, Demetrios Zeinalipour-Yazti, Christos G. Panayiotou "Proceedings of the Intl. Conference on Indoor Positioning and Indoor Navigation" (IPIN '11), Guimares, Portugal 2011.
+
+    Note: Georgios Constantinou, Marios Constantinides, Silouanos Nicolaou were students of the EPL371 - Systems Programming course I taught in 2011.
+    
+[C30] "SmartTrace: Finding similar trajectories in smartphone networks without disclosing the traces", Constandinos Costa, Christos Laoudias, Demetrios ZeinalipourYazti, Dimitrios Gunopulos "Proceedings of the 2011 IEEE 27th International Conference on Data Engineering" (ICDE '11), IEEE Computer Society, pp. 1288-1291, Washington, DC, USA, ISBN: 978-1-4244-8959-6, 2011.
+
+    Note: Constandinos Costa has carried out his B.Sc. thesis under my supervision.
+
+[C27] "FSort: external sorting on flash-based sensor devices", Panayiotis Andreou, Orestis Spanos, Demetrios Zeinalipour-Yazti, Panos K. Chrysanthis, George Samaras "Proceedings of the Sixth International Workshop on Data Management for Sensor Networks" (DMSN '09), Lyon, France ACM, pp. 10:1-10:6, New York, NY, USA, ISBN: 978-1-60558-777-6, 2009.
+    
+    Note: Orestis Spanos has been a B.Sc. research advisee.
+
+[C25] "KSpot: Effectively Monitoring the K Most Important Events in a Wireless Sensor Network", Panayiotis Andreou, Demetrios Zeinalipour-Yazti, Martha Vasiliadou, Panos K. Chrysanthis, George Samaras "Proceedings of the 2009 IEEE International Conference on Data Engineering" (ICDE '09), IEEE Computer Society, pp. 1503-1506, Washington, DC, USA, ISBN: 978-0-7695-3545-6, 2009.
+    
+    Note: Martha Vasiliadou has been a B.Sc. research advisee.
+
+[C24] "ETC: Energy-Driven Tree Construction in Wireless Sensor Networks", Panayiotis Andreou, Andreas Pamboris, Demetrios Zeinalipour-Yazti, Panos K. Chrysanthis, George Samaras "Proceedings of the 2009 Tenth International Conference on Mobile Data Management: Systems, Services and Middleware" (MDM '09), IEEE Computer Society, pp. 513-518, Washington, DC, USA, ISBN: 978-0-7695-3650-7, 2009.
+    
+    Note: Andreas Pamboris has been a B.Sc. research advisee.
+
+[C17] "Intensive Care Window: A Multi-Modal Monitoring Tool for Intensive Care Research and Practice", Harald Gjermundrod, Marios Papa, Demetrios Zeinalipour-Yazti, Marios D. Dikaiakos, George Panayi, Theodoros Kyprianou "Proceedings of the Twentieth IEEE International Symposium on Computer-Based Medical Systems" (CBMS '07), IEEE Computer Society, pp. 471-476, Washington, DC, USA, ISBN: 0-7695-2905-4, 2007.
+
+    Note: Marios Papa has been a B.Sc. research advisee. He is now a postdoc at Disney Research Zurich, Switzerland.
+
+
+C. Programming Competitions (3rd & 4th Year BSc Students)
+=========================================================
+Since 2010, I have yearly advised undergraduate students to participate in the ACM SIGMOD (Special Interest Group on Management Of Data) Programming Contest, the premier data management competition organized by MIT, USA. Particularly, interested students were asked to participate in the given competition in place of an assignment given to the rest class. The given competition allows students to practically combine the taught material of my undergradute courses EPL371 (Systems Programming) and 446 (Advanced Databases).  In this way, undergradute students had the opportunity to dig into complex algorithmic and system challenges that arise in modern data management systems. The given experience has been very rewarding for students. For example, Chrysovalantis Anastasiou (BSc graduate of 2014 class, now a Fulbright Fellow at Univ. of Southern California, USA) mentioned:
+
+"
+    After a few weeks of hard work, my teammate and I ranked 13th worldwide. It was one of my best experiences during University, since we had to combine all the knowledge gained in order to build a high-throughput system. Our accomplishment was a sign that we could excel in the area of databases and high-performance systems.
+"
+    
+Rankings:
+- 2010 (9th Position)
+
+    Note: Fotos Fragkoudis (PhD student at USC, USA), Andriani Stylianou (MSc student at EPFL, Switzerland), Onisiforos Onisiforou.
+
+- 2011 (6th Position)
+
+    Note: George Constantinou (PhD student at USC, USA) and Marios Constantinides (PhD student at UCL, UK) and Silouanos Nicolaou.
+
+- 2013 (10th), 
+- 2014 (9th),
+- 2015 (5th - finalist!)
+
+   Note: Lambros Petrou (MSc student at Oxford, UK), Marios Mitzis (PhD student at UCL, UK), George Koummetou.
+
+D. Interviews (2nd Year BSc Students)
+==============================================
+Since 2014, 2nd year undergrduate students are asked to carry out an interview of some faculty member and present their video to the rest class. I have provided numerous such interviews to students with encouraging results, e.g.,
+
+https://www.youtube.com/watch?v=-A47oc6O4QQ
+https://www.youtube.com/watch?v=uRvgSsVbw7E
+
+E. Student Internships (1st Year BSc Students)
+==============================================
+During my EPL132 - Programming Principles II course, I carry out a yearly contest (see http://www2.cs.ucy.ac.cy/~dzeina/courses/epl132/project-2015.html). Winners of the contest are given the opportunity to carry out a summer research intership at the Data Management Systems Laboratory I am directing. In the past, students have worked on research projects that became open source, e.g.,
+
+https://github.com/dmsl/imu-win8
+
+F. Progress of Students
+====================================
+
+Fellowship Awardees
+--------------------
+1) Chrysovalantis Anastasiou (Fulbright Fellow at Univ. of Southern California, USA).
+2) George Constantinou (Fulbright Fellow at Univ. of Southern California, USA).
+3) Lambros Petrou (Oxford Fellow at Oxford, UK - turned down Fulbright Fellowship at Univ. of Southern California, USA).
+4) Fotos Fragkoudis (Univ. of Southern California, USA).
+5) Marios Papa (Fulbright Fellow at Univ. of California - San Diego, USA)
+6) Andreas Pamboris (Fulbright Fellow at Univ. of California - San Diego, USA)
+
+PhD Students
+-------------
+1) Giannis Evagorou (Imperial, UK)
+2) Paschalis Mpeis (Univ. of Edinburgh, UK)
+3) Marios Mintzis (UCL, UK)
+4) Marios Constantinides (UCL, UK)
+5) Constantinos Costa (UCY, Cyprus)
+
+
