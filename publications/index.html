@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        
+        <script>
+            $.ajax({
+                url:"https://bibbase.org/show?bib=https://dzeina.github.io/publications/demo.bib#",
+                type:'GET',
+                crossDomain: true,
+                beforeSend: function(xhr){
+                    xhr.withCredentials = true;
+                },
+                success: function(data){
+                    $('#content').html($(data).find('#content').html());
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div id="content"></div>
+        <iframe  id="myIframe" scrolling="no" frameborder="0"
+            style="position: relative; height: 100%; width: 100%;" src="https://bibbase.org/show?bib=https://dzeina.github.io/publications/demo.bib#"></iframe>
+    </body>
+</html>
+
