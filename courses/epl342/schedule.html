@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>[ EPL342 > Schedule ]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+    </head>
+
+	<body id="page-top" class="index">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+					<button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<span><a href="#"><img border="0" width="170" src="images/csucy.png"/></a></span>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="page-scroll">
+							<a href="index.html">EPL342</a>
+						</li>
+						<li class="page-scroll">
+							<a href="index.html#news">News</a>
+						</li>
+						<li class="page-scroll">
+							<a href="schedule.html">Schedule</a>
+						</li>
+						<!--<li class="page-scroll">
+							<a href="recitations.html">Recitations</a>
+						</li>-->
+						<li class="page-scroll">
+							<a href="labs/lab.html">Labs</a>
+						</li>
+						<li class="page-scroll">
+							<a href="index.html#assignments">Assignments</a>
+						</li>
+						<li class="page-scroll">
+							<a target="_blank" href="https://moodle.cs.ucy.ac.cy/course/view.php?id=50">Moodle</a>
+						</li>
+						<li class="page-scroll">
+							<a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl342/private">TA</a>
+						</li>
+						<li class="page-scroll">
+							<a onclick="javascript:$('#bs-example-navbar-collapse-2').toggle();">
+								<span class="glyphicon glyphicon-search"></span>
+							</a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+
+				<!-- search box submenu -->
+				<div class="collapse" id="bs-example-navbar-collapse-2">
+					<gcse:search></gcse:search>
+						</div>
+
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<!-- search box submenu -->
+		<div class="collapse" id="bs-example-navbar-collapse-2">
+			<gcse:search></gcse:search>
+				</div>
+
+		<section id="tree" style="margin-top:70px">
+			<div class="container">
+				<a href="../../index.html">Zeinalipour</a> > <a href="../../index.html#courses">Courses</a> >
+				<a href="index.html">EPL342</a> > Schedule
+			</div>
+		</section>
+
+		<!-- News Section -->
+		<section id="assignments">
+			<div class="container lead">
+				<h3>Schedule
+<!--					<button class="btn btn-xs btn-success" onclick="javascript:$('.allshow').toggle();">&raquo;</button>
+
+<span class="glyphicon glyphicon-chevron-down"></span>-->
+					<a target="_blank" onclick="javascript:$('.allshow').toggle();" class="btn btn-xs btn-success">&raquo;</a></h3>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th align="center" width="5%">Week</th>
+							<th align="center" width="90%">Content</th>
+							<th align="center" width="5%">PDF</th>
+						</tr>
+					</thead>
+					<tbody align="left">
+						<tr>
+							<td>W01</td>
+							<td> <a onclick="javascript:$('#content-1').toggle();">Introduction I: Syllabus &amp; Introduction to Databases &raquo;</a><br>
+								<small>
+								   <!-- <b>Invited Talk:</b> <a href="http://www.cs.ucy.ac.cy/colloquium/index.php#cs.ucy.2015.ahlers">"Geospatial Search and Mobility"</a>, Dr. Dirk Ahlers, Norwegian University of Science and Technology, Norway.<br>-->
+									<i class="allshow" style="display:none;" id="content-1">
+										<b>Readings:</b> Chapter 1.1-1.3, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Course Objectives and Syllabus, Database Types and Applications, Basic Definitions, Basic Operations in a Databasem, A Database Example, Basic Advantages of using a Databases (as opposed to Files)
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/01.pdf">01</a><br>
+								<a target="_blank" href="https://www.cs.ucy.ac.cy/~dzeina/courses/epl342/lectures/syllabus.pdf">syllabus</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-2').toggle();">Introduction II: Database Users and Database System Concepts and Architecture &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-2">
+										<b>Readings:</b> Chapter 1.4-1.9, 2.1, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Database Users and Responsibilities, More Advantages of Using the DBMS Approach, A Brief History of Database Applications, When Not to Use a DBMS, Data Models, Schemas, and Instances
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/02.pdf">02</a></td>
+						</tr>
+						<tr>
+							<td>W02</td>
+							<td> <a onclick="javascript:$('#content-3').toggle();">Introduction III: Database System Concepts and Architecture &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-3">
+										<b>Readings:</b> Chapter 2.2-2.7, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Three-Schema Architecture and Data Independence, Database Languages and Interfaces, The Database System Environment, Centralized and Client/Server Architectures for DBMSs, Classification of Database Management Systems
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/03.pdf">03</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-4').toggle();">Entity-Relationship Model I: Data Modeling Using the Entity-Relationship (ER) Model &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-4">
+										<b>Readings:</b> Chapter 3-3.3, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Using High-Level Conceptual Data Models for Database Design,  An Example Database Application,  Entity Types, Entity Sets, Attributes, and Keys
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/04.pdf">04</a></td>
+						</tr>
+
+						<!---->
+						<tr>
+							<td>W03</td>
+							<td> <a onclick="javascript:$('#content-5').toggle();">Entity-Relationship Model II: Data Modeling Using the Entity-Relationship (ER) Model &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-5">
+										<b>Readings:</b> Chapter 3.4-3.7, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Relationship Types, Relationship Sets, Roles, and Structural Constraints, Weak Entity Types, Refining the ER Design for the COMPANY Database, ER Diagrams, Naming Conventions, and Design Issues
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/05.pdf">05</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-6').toggle();">Entity-Relationship Model III: ER + The Enhanced Entity-Relationship (EER) Model &raquo;</a><br>
+								<font color="red">Assignment 1 <a href="index.html#assignments">(Entity-Relationship Model)</a> Announced</font><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-6">
+										<b>Readings:</b> Chapter 3.8, Appendix A and 4.1-4.4, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Relationship Types of Degree Higher Than Two, Designing Tools, Enhanced Entity-Relationship (Subclasses, Superclasses, and Inheritance, Specialization and Generalization, Constraints and Characteristics of Specialization and Generalization Hierarchies, Modeling of UNION Types Using Categories, An Example UNIVERSITY EER Schema)
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/06.pdf">06</a></td>
+						</tr>
+
+						<tr>
+							<td>W04</td>
+							<td> <a onclick="javascript:$('#content-7').toggle();">Relational Model I &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-7">
+										<b>Readings:</b> Chapter 5.1-5.2, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Introduction to the Relational Model, Definitions (Relation, Key, Relational Schema, Domain, Tuple, Attribute, Relation State, Cardinality) and Examples, Characteristics of the Relational Model (Ordering of Tuples, Ordering of Attributes, Values and NULL Values), Introduction to Relational Constraints (Key, Entity, Referential Integrity, Domain)
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/07.pdf">07</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-8').toggle();">Relational Model II + Relational Algebra I &raquo;</a><br>
+                                <font color="red">Assignment 1 <a href="index.html#assignments">(Entity-Relationship Model)</a> Due</font><br>
+								<font color="red">Project Phase 1 <a href="index.html#assignments">(Entity-Relationship &amp; Relational Model)</a> Announcement (in Laboratory)</font><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-8">
+										<b>Readings:</b> Chapter 5.2-5.3 and 6.1, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Relational Constraints (Key, Entity, Referential Integrity, Domain), Update Operations, Transactions, and Dealing with Constraint Violations.
+										<br/>Unary Relational Operations: SELECT (σ) and PROJECT (π)
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/08.pdf">08</a></td>
+						</tr>
+						<tr>
+							<td>W05</td>
+							<td> <a onclick="javascript:$('#content-9').toggle();">Relational Algebra II &raquo;</a><br>
+
+								<small>
+									<i class="allshow" style="display:none;" id="content-9">
+										<b>Readings:</b> Chapter 8.2-8.3, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Unary Relational Operations: RENAME (ρ), Relational Algebra Operations from Set Theory (UNION, INTERSECTION, MINUS, SYMMETRIC DIFFERENCE), Binary Relational Operations: JOIN
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/09.pdf">09</a></td>
+						</tr>
+						<tr>
+							<td>W06</td>
+							<td> <a onclick="javascript:$('#content-10').toggle();">Relational Algebra III &raquo;</a><br>
+								<font color="red">Assignment 2 <a href="index.html#assignments">(Relational Model & Relational Algebra)</a> Announced</font><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-10">
+										<b>Readings:</b> Chapter 8.4-8.5, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Binary Relational Operations (DIVISION), Additional Relational Operations (Aggregate Functions, Generalized Projection, Grouping, Recursive Closure, Outer Join), Examples of Queries in Relational Algebra with University and Sailors-Reserve-Boats Example
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/10.pdf">10</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-11').toggle();">ER-to-Relational Mapping &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-11">
+										<b>Readings:</b> Chapter 4, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> ER-to-Relational Mapping Algorithm (Mapping of: Regular Entity Types, Weak Entity Types, Binary 1:1, 1:N and M:N Relation Types, Multivalued attributes, N-ary Relationship Types, ER-to-Relational Mapping Algorithm (Options for Mapping Specialization or Generalization, Mapping of Union Types (Categories)).
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/11.pdf">11</a></td>
+						</tr>
+						<tr>
+							<td>W07</td>
+							<td> <a onclick="javascript:$('#content-12').toggle();">SQL-DDL I: Introduction to SQL-DDL Data Types &raquo;</a><br>
+                                 <font color="red">Project Phase 1 <a href="index.html#assignments">(Entity-Relationship &amp; Relational Model)</a> Due (in Laboratory)</font><br>
+                                 <font color="red">Project Phase 2 <a href="index.html#assignments">(Implementation)</a> Begins (in Laboratory)</font><br>
+							   <small>
+									<i class="allshow" style="display:none;" id="content-12">
+										<b>Readings:</b> Chapter 6.1, Elmasri-Navathe 7ED + <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2016">"Transact-SQL Reference"</a><br>
+										<b>Content:</b> Introduction to SQL-DDL, SQL 1999 Data types (Numeric, Char, BLOB, CLOB, Bit, Boolean, Date, Time, Timestamp, etc)
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/12.pdf">12</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-13').toggle();">SQL-DDL II &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-13">
+										<b>Readings:</b> Chapter 6.2-6.3, Elmasri-Navathe 7ED + <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2016">"Transact-SQL Reference"</a><br>
+										<b>Content:</b> SQL Server's TSQL: Date Functions (DATEDIFF, DATEADD, DATEPART, ISDATE), IDENTITY data type, Computed attribute, CREATE TYPE, CREATE/DROP/TRUNCATE/DELETE/ALTER, Database Schema, Constraints (PRIMARY KEY, UNIQUE, FOREIGN KEY, NOT NULL, CHECK), Integrity Constraints Actions: ON DELETE |  ON UPDATE { NO ACTION | CASCADE | SET NULL | SET DEFAULT }, Temporarily Disabling Constraints: WITH CHECK / WITH NO CHECK
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/13.pdf">13</a></td>
+						</tr>
+						<tr>
+							<td>W08</td>
+							<td> <a onclick="javascript:$('#content-14').toggle();">SQL-DML I &raquo;</a><br>
+                                <font color="red">Assignment 2 <a href="index.html#assignments">(Relational Model & Relational Algebra)</a> Due</font><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-14">
+										<b>Readings:</b> Chapter 6.4, Elmasri-Navathe 7ED + <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2016">"Transact-SQL Reference"</a><br>
+										<b>Content:</b> Introduction to SQL-DML, SQL vs. Relational Algebra, Simple SELECT-FROM-WHERE Queries, JOIN and Cartesian Product, DISTINCT, Set Operations (UNION [ALL], INTERSECT, EXCEPT)
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/14.pdf">14</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <span class="label label-success">Midterm</span> scheduled for Tuesday, October 25, 2022
+                                Time: 09:00-10:15 in <!-- <a target="_blank" href="https://anyplace.cs.ucy.ac.cy/viewer/?buid=building_8a512f34-5f2e-4ee5-a90c-27db947866cf_1422819189507&floor=1&selected=poi_658f9884-e4b0-4249-b797-c8160ebfd080">ΧΩΔ01-108</a> (EPL342.1, CRN: 10178) and --><a target="_blank" href="https://anyplace.cs.ucy.ac.cy/viewer/?buid=building_8a512f34-5f2e-4ee5-a90c-27db947866cf_1422819189507&floor=1&selected=poi_30e319d6-ff60-4195-8785-4a823bc25ac2">ΧΩΔ01-109</a> 
+                                </span><br>
+                                This is a closed book exam: no books, notebooks, notes, etc. </a>
+                                
+							</td>
+							<td>-</td>
+						</tr>
+					   <tr>
+							<td>W09</td>
+							<td> <a onclick="javascript:$('#content-15').toggle();">SQL-DML II &raquo;</a><br>
+                                <small>
+                                    <i class="allshow" style="display:none;" id="content-15">
+                                        <b>Readings:</b> Chapter 6.4-6.5.4, Elmasri-Navathe 7ED + <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2016">"Transact-SQL Reference"</a><br>
+                                        <b>Content:</b> Ordering of Results (ORDER-BY), Pattern Matching with LIKE and CONTAINS (TSQL), COLLATE (sort and compare strings according regional conventions), Comparisons Involving NULLS (IS NULL), Nested Queries (Correlated and Uncorrelated) and Set/Multiset Comparisons (EXIST, IN, op-ALL, op-ANY), DIVISION (using NOT EXISTS ... EXCEPT)
+                                    </i>
+                                </small>
+							</td>
+							<td><font><a target="_blank" href="lectures/15.pdf">15</a></font></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-16').toggle();">SQL-DML III &raquo;</a><br>
+								<i class="allshow" style="display:none;" id="content-16">
+									<small>
+										<b>Readings:</b> Chapter 6.5.6-6.5.7, Elmasri-Navathe 7ED + <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2016">"Transact-SQL Reference"</a><br>
+										<b>Content:</b> Renaming with AS, Advanced Joins (NATURAL, INNER JOIN, OUTER JOIN (LEFT, RIGHT, FULL), CROSS JOIN), Aggregate Functions in SQL (COUNT, MAX, MIN, AVG, SUM), Characteristics of COUNT in TSQL (DISTINCT, ALL, *)</b>
+									</small>
+								</i>
+							</td>
+							<td><a target="_blank" href="lectures/16.pdf">16</a></td>
+						</tr>
+						<tr>
+							<td>W10</td>
+							<td> <a onclick="javascript:$('#content-17').toggle();">SQL-DML IV &raquo;</a><br>
+								 <font color="red">Assignment 3 <a href="index.html#assignments">(Structured Query Language (SQL))</a> Announced</font><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-17">
+										<b>Readings:</b> Chapter 6.5.8-6.5.9, Elmasri-Navathe 7ED + <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2016">"Transact-SQL Reference"</a><br>
+										<b>Content:</b> Conceptual Query Execution Plan Explanation, GROUP-BY, HAVING in SQL, Insert/Delete/Update Operations in SQL, BULK INSERT in TSQL, SQL Data Control Language (SQL-DCL)
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/17.pdf">17</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-18').toggle();">Advanced SQL: Internal Database Programming &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-18">
+										<b>Readings:</b> Chapter 6.7-6.8 and 7.1-7.4, Elmasri-Navathe 7ED + <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2016">"Transact-SQL Reference"</a><br>
+										<b>Content:</b> Views (CREATE/DROP/ALTER VIEW),  Assertions and Triggers (CREATE ASSERTION, CREATE TRIGGER), BEFORE|INSTEAD OF Triggers, Examples with input validation, logging table state / versioning (INSERTED, DELETED tables), 
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/18.pdf">18</a></td>
+						</tr>
+						<tr>
+							<td>W11</td>
+							<td> <a onclick="javascript:$('#content-19').toggle();">Advanced SQL: Internal Database Programming &raquo;</a><br>
+								 <font color="red">Assignment 3 <a href="index.html#assignments">(Structured Query Language (SQL))</a> Due</font><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-19">
+										<b>Readings:</b> Chapter 10, Elmasri-Navathe 7ED + <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2016">"Transact-SQL Reference"</a><br>
+										<b>Content:</b> Programming inside the Database: Introductory (SET, DECLARE, USE, SELECT, GO,IF..ELSE, WHILE, CASE), Scripts and Batches, Dynamic SQL and EXEC.
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/19.pdf">19</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-20').toggle();">Advanced SQL: External Database Programming &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-20">
+										<b>Readings:</b> Chapter 10, Elmasri-Navathe 7ED + <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2016">"Transact-SQL Reference"</a><br>
+										<b>Content:</b> Stored Procedures (SPROCs) and SET NOCOUNT, Advantages and Disadvantages of Stored Procedures, SQL Injection Attacks (Definitions, Types, Examples, Handling in TSQL, Relevant Functions QUOTENAME, REPLACE), SPROCs in JAVA (CallableStatement), Transactions, SQL Transaction Control Language (SQL-TCL), Indexes (Basic, Clustered), User Defined Functions (UDFs), Programming Database Objects with High Level Languages (SQLCLR), Embedded SQL, DB Programming with Function Calls: SQL/CLI or JDBC
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/20.pdf">20</a></td>
+						</tr>
+						<tr>
+							<td>W12</td>
+							<td> <a onclick="javascript:$('#content-21').toggle();">Functional Dependencies and Normalization I &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-21">
+										<b>Readings:</b> Chapter 14.1, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Introduction to Normalization, Informal Design Guidelines for Relational Schemas: i) Semantics of Relation and Attribute Names, ii) Redundant Information in Tuples and Update Anomalies (Insert, Update, Delete), iii) NULLs in Tuples and iv) Spurious Tuples.
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/21.pdf">21</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-22').toggle();">Functional Dependencies and Normalization II &raquo;</a><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-22">
+										<b>Readings:</b> Chapter 14.2, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Introduction to Functional Dependencies (FD): Motivation and Definitions, Inference Rules for FD, Armstrong Axioms and FD Proofs, Additional Definitions for FDs: FD Closure F+, Attribute Closure X+,  Equivalence of two sets of FDs (F+=G+), Cover of an FD set, Minimal Cover for an FD Set.
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/22.pdf">22</a></td>
+						</tr>
+						<tr>
+							<td>W13</td>
+							<td> <a onclick="javascript:$('#content-23').toggle();">Functional Dependencies and Normalization III &raquo;</a><br>
+								 <font color="red">Assignment 4 <a href="index.html#assignments">(Functional Dependencies and Normal Forms)</a> Announced</font><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-23">
+										<b>Readings:</b> Chapter 14.3-14.4, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Overview of Normalization and Normal Forms, Definitions: Prime and Non-Prime Attribute, Partial and Full Functional Dependencies, Normal Forms (1NF, 2NF and 3NF): Motivation, Examples, Decomposition.
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/23.pdf">23</a></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td> <a onclick="javascript:$('#content-24').toggle();">Functional Dependencies and Normalization IV &raquo;</a><br>
+								<font color="red">Project Phase 2 <a href="index.html#assignments">(Implementation)</a> Due (in Laboratory)</font><br>
+								<small>
+									<i class="allshow" style="display:none;" id="content-24">
+										<b>Readings:</b> Chapter 14.5, Elmasri-Navathe 7ED<br>
+										<b>Content:</b> Normal Forms (BCNF): Motivation, Examples, Decomposition,  Introduction to EPL446 (Advanced Database Systems): Syllabus and Other Details
+									</i>
+								</small>
+							</td>
+							<td><a target="_blank" href="lectures/24.pdf">24</a></td>
+						</tr>
+
+
+						<tr>
+							<td>Exams</td>
+							<td> <font color="red">FINAL Exam <!--scheduled on Friday, May 11, 2019 @ 16:30-19:30 in <a target="_blank"   href="https://anyplace.cs.ucy.ac.cy/viewer/?buid=building_e27b447b-5991-47c4-92ab-8d8a470a4718_1424393182553&floor=0&selected=poi_5ec8068f-cafb-4e2e-95e2-fcdbce9bf7f1">ΘΕΕ02-012</a>. Please see the <a href="https://www.ucy.ac.cy/fmweb/el/tomeas-spoudon/undergraduate-office/15-gr-articles/bottom-menu/49-exam-schedule">schedule</a> for further details.--> <br>
+								This is a closed book exam: no books, notebooks, notes, etc. allowed
+							</td>
+							<td><font>-</font></td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+	</body>
+
+	<hr class="star-primary">
+	<footer>
+		<small>
+			<center>
+				© D. Zeinalipour | Credits: CR template
+				<a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+				<div style="display:none;" id="credit">
+					[CR template available under Creative Commons CC BY 4.0 licence: <a href="https://github.com/dmsl/course-responsive-template" target="_blank">https://github.com/dmsl/course-responsive-template</a> ]
+				</div>
+			</center>
+		</small>
+	</footer>
+
+</html>
