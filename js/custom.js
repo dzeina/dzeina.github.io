@@ -104,6 +104,42 @@ jQuery(document).ready(function($) {
 ga('create', 'UA-70658068-1', 'auto');
 ga('send', 'pageview');
 
+/* 
+<!-- Google tag (gtag.js)
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PVHTKKEDV"></script>
+<script>
+*/
+// Google Analytics 4 hack - dynamically load custom JS
+function loadJS(FILE_URL, async = true) {
+  let scriptEle = document.createElement("script");
+
+  scriptEle.setAttribute("src", FILE_URL);
+  scriptEle.setAttribute("type", "text/javascript");
+  scriptEle.setAttribute("async", async);
+
+  document.head.appendChild(scriptEle);
+
+  // success event
+  scriptEle.addEventListener("load", () => {
+   // console.log("File loaded")
+  });
+   // error event
+  scriptEle.addEventListener("error", (ev) => {
+    console.log("Error on loading Google Analytics script file", ev);
+  });
+}
+
+loadJS("https://www.googletagmanager.com/gtag/js?id=G-0PVHTKKEDV", true);
+
+/* <script> */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){
+      dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-0PVHTKKEDV');
+/* </script> */
+
 
 // Check if HTTPS website is available. If yes, then load it.
 //////////////////////////////////////////////////////////////
