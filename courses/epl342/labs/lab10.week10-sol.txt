@@ -1,0 +1,200 @@
+USE Northwind
+GO 
+
+--VIEWS
+--View 1
+IF OBJECT_ID ('[view_EmployeeFullNames]', 'V') IS NOT NULL
+	DROP VIEW [view_EmployeeFullNames]
+GO
+CREATE VIEW view_EmployeeFullNames
+AS
+SELECT	ID, 
+		[First Name] + ' ' + [Last Name] as [Employee Name]
+FROM	Employees
+GO
+
+--View 2
+IF OBJECT_ID ('[view_NumberOfEmployeesByCity]', 'V') IS NOT NULL
+	DROP VIEW [view_NumberOfEmployeesByCity]
+GO
+CREATE VIEW view_NumberOfEmployeesByCity
+AS
+SELECT	City, COUNT(*) AS [Total Employees] 
+FROM	Employees
+GROUP BY City
+GO
+
+--View 3
+IF OBJECT_ID ('[view_TotalSalesByCustomerCity]', 'V') IS NOT NULL
+	DROP VIEW [view_TotalSalesByCustomerCity]
+GO
+CREATE VIEW view_TotalSalesByCustomerCity
+AS
+SELECT	C.City, 
+		SUM(OD.Quantity * OD.[Unit Price]) AS [Total Sales], 
+		COUNT(O.[Order ID]) AS [Count Orders]
+FROM	Customers C
+		INNER JOIN Orders O
+			ON C.ID = O.[Customer ID] 
+		INNER JOIN [Order Details] OD
+			ON O.[Order ID] = OD.[Order ID]
+GROUP BY C.City
+GO
+
+
+--Query 4
+sp_helptext 'view_TotalSalesByCustomerCity'
+GO
+
+--View 5
+ALTER VIEW view_TotalSalesByCustomerCity
+WITH ENCRYPTION
+AS
+SELECT	C.City, 
+		SUM(OD.Quantity * OD.[Unit Price]) AS [Total Sales], 
+		COUNT(O.[Order ID]) AS [Count Orders]
+FROM	Customers C
+		INNER JOIN Orders O
+			ON C.ID = O.[Customer ID] 
+		INNER JOIN [Order Details] OD
+			ON O.[Order ID] = OD.[Order ID]
+GROUP BY C.City
+GO
+
+
+
+
+
+--TRIGGERS
+--Trigger 1
+IF OBJECT_ID ('[tr_AUDIT_Employees]', 'TR') IS NOT NULL
+	DROP TRIGGER [tr_AUDIT_Employees]
+GO
+CREATE TRIGGER [tr_AUDIT_Employees] ON Employees
+AFTER INSERT, UPDATE
+AS
+DECLARE @countDeleted int
+SET @countDeleted = (SELECT COUNT(*) FROM deleted)
+
+IF @countDeleted=0
+--A new employee has been inserted
+BEGIN
+	UPDATE	Employees
+	SET		CREATE_ID=USER,
+			CREATE_DATE=GETDATE()
+	WHERE	ID IN (SELECT ID FROM inserted)
+END
+ELSE
+--A current employee has been updated
+BEGIN
+	UPDATE	Employees
+	SET		UPDATE_ID=USER,
+			UPDATE_DATE=GETDATE()
+	WHERE	ID IN (SELECT ID FROM inserted)
+END
+GO
+
+--Trigger 2
+IF OBJECT_ID ('[tr_ORDER_TOTAL]', 'TR') IS NOT NULL
+	DROP TRIGGER [tr_ORDER_TOTAL]
+GO
+CREATE TRIGGER [tr_ORDER_TOTAL] ON [Order Details]
+AFTER INSERT, UPDATE
+AS
+
+DECLARE @total money
+SET @total = 
+(
+SELECT	SUM(Quantity * [Unit Price]) 
+FROM	[Order Details]
+WHERE	[Order ID] IN (
+			SELECT [Order ID] 
+			FROM inserted
+			)
+)
+
+UPDATE	Orders
+SET		[TOTAL] = @Total
+WHERE	[Order ID] IN (
+			SELECT [Order ID] 
+			FROM inserted
+			)
+GO
+
+
+
+
+
+--FUNCTIONS
+--Function 1
+IF OBJECT_ID ('fn_ABS', 'FN') IS NOT NULL
+	DROP FUNCTION fn_ABS
+GO
+CREATE FUNCTION fn_ABS(@input int)
+RETURNS int
+AS
+BEGIN
+	IF @input<0
+	BEGIN
+		SET @input = @input * (-1)
+	END
+	RETURN @input
+END
+GO
+
+--Function 2
+IF OBJECT_ID ('fn_DATE_ONLY', 'FN') IS NOT NULL
+	DROP FUNCTION fn_DATE_ONLY
+GO
+CREATE FUNCTION fn_DATE_ONLY(@input datetime)
+RETURNS char(10)
+AS
+BEGIN
+	DECLARE @result char(10)
+	IF NOT @input IS NULL
+	BEGIN
+		SET @result = CONVERT(char(10), @input, 103)
+	END
+	RETURN @result
+END
+GO
+
+--Function 3
+IF OBJECT_ID ('fn_LEFT', 'FN') IS NOT NULL
+	DROP FUNCTION fn_LEFT
+GO
+CREATE FUNCTION fn_LEFT(
+@input sysname,
+@length tinyint)
+RETURNS sysname
+AS
+BEGIN
+	DECLARE @result sysname
+	SET @result = SUBSTRING(@input, 1, @length)
+	RETURN @result
+END
+GO
+
+
+--Function 4
+IF OBJECT_ID ('fn_REVERSE', 'FN') IS NOT NULL
+	DROP FUNCTION fn_REVERSE
+GO
+CREATE FUNCTION fn_REVERSE(@input sysname)
+RETURNS sysname
+AS
+BEGIN
+	DECLARE @len int
+	SET @len = LEN(@input)
+
+	DECLARE @output sysname
+	SET @output=''
+
+	WHILE @len>0
+	BEGIN
+		SET @output = @output + SUBSTRING(@input, @len, 1)
+		SET @len=@len-1
+	END
+	RETURN @output
+END
+GO

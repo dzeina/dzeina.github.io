@@ -32,11 +32,14 @@ function internal_link() {
     var urlArray = window.location.href.split('#');
     if (urlArray.length == 2 && urlArray[1] != "") {
         switch (urlArray[1]) {
-            case "overview":    $('#tab-1-content').show(); break;
-            case "content":     $('#tab-2-content').show(); break;
-            case "news":        $('#tab-3-content').show(); break;
-            case "assignments": $('#tab-8-content').show(); break;
-            case "books":       $('#tab-9-content').show(); break;
+            case "overview":      $('#tab-1-content').show(); break;
+            case "content":       $('#tab-2-content').show(); break;
+            case "news":          $('#tab-3-content').show(); break;
+            case "schedule":      $('#tab-4-content').show(); break;
+            case "laboratory":    $('#tab-5-content').show(); break;
+            case "assignments":   $('#tab-6-content').show(); break;
+            case "presentations": $('#tab-7-content').show(); break;
+            case "books":         $('#tab-8-content').show(); break;
             default: break;
         }
     }
@@ -81,7 +84,7 @@ jQuery(document).ready(function($) {
 
 // Google Site Search | Search box
 (function() {
- var cx = '012777421281883581498:grpobo4e5la';
+ var cx = '012777421281883581498:8bio77xztpa';
  var gcse = document.createElement('script');
  gcse.type = 'text/javascript';
  gcse.async = true;
@@ -100,5 +103,7 @@ ga('create', 'UA-70658068-1', 'auto');
 ga('send', 'pageview');
 
 // SSL Redirection
-// if (window.location.protocol != "https:")
-//    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+if (window.location.protocol != "https:")
+window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+
+

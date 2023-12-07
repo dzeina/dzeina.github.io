@@ -1,0 +1,22 @@
+CREATE TABLE [dbo].[Hogwarts](
+	[ID] [int] PRIMARY KEY,
+	[Name] [nvarchar](100) NOT NULL,
+	[SID] [int] NULL
+)
+GO
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (1, N'Albus Dumbledore', NULL)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (2, N'Argus Filch', 1)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (3, N'Filius Flitwick', 1)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (4, N'Rubeus Hagrid', 1)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (5, N'Madam Hooch', 1)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (6, N'Gilderoy Lockhart', 1)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (7, N'Minerva McGonagall', 1)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (8, N'Severus Snape', 1)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (9, N'Cedric Diggory', 5)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (10, N'Harry Potter', 7)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (11, N'Ron Weasly', 7)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (12, N'Hermione Granger', 7)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (13, N'Any Slytherin', 8)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (14, N'Draco Malfoy', 8)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (15, N'Fred Weasly', 3)
+INSERT [dbo].[Hogwarts] ([ID], [Name], [SID]) VALUES (16, N'George Weasly', 3)

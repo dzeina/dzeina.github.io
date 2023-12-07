@@ -1,0 +1,109 @@
+--Query 1
+SELECT	[Last Name], [First Name]
+FROM	Employees
+ORDER BY [Last Name], [First Name]
+
+--Query 2
+SELECT	[Last Name] + ' ' + [First Name] AS [Employee Name]
+FROM	Employees
+ORDER BY [Last Name], [First Name]
+
+--Query 3
+SELECT	SUBSTRING([Last Name], 1, 1) + '. ' + [First Name] AS [Employee Name]
+FROM	Employees
+ORDER BY [Last Name], [First Name]
+
+--Query 4
+SELECT	[Product Name]
+FROM	Products
+WHERE	([Product Name] LIKE N'Northwind Traders C%')
+
+--Query 5
+SELECT	ID, Address
+FROM	Customers
+WHERE	(Address LIKE '___ 1%')
+
+--Query 6
+SELECT	[Product Name], Category
+FROM	Products
+WHERE	(Category IN ('Beverages', 'Condiments'))
+ORDER BY Category
+
+--Query 7
+SELECT	[Order ID]
+FROM	Orders
+WHERE	([Shipper ID] IS NULL)
+
+--Query 8
+SELECT	[Order ID], ISNULL([Shipper ID], -1)
+FROM	Orders
+
+--Query 9
+SELECT [Order ID], Quantity * [Unit Price] AS [Total Amount]
+FROM   [Order Details]
+
+--Query 10
+SELECT [Order ID], Quantity * [Unit Price] AS [Total Amount]
+FROM   [Order Details]
+ORDER BY [Total Amount] DESC
+
+--Query 11
+SELECT	[Order ID], Quantity * [Unit Price] AS [Total Amount]
+FROM	[Order Details]
+WHERE	(Quantity * [Unit Price] > 2000)
+ORDER BY [Total Amount] DESC
+
+--Query 12
+SELECT	O.[Order ID], O.[Order Date]
+FROM	[Order Details] AS OD 
+		INNER JOIN Orders AS O 
+		ON OD.[Order ID] = O.[Order ID]
+WHERE	(OD.Quantity * OD.[Unit Price] > 2000)
+ORDER BY OD.Quantity * OD.[Unit Price] DESC
+
+--Query 13
+SELECT	O.[Order ID], O.[Order Date]
+FROM	Orders AS O
+WHERE	O.[Order ID] IN 
+(
+	SELECT	[Order ID]
+	FROM	[Order Details]
+	WHERE	(Quantity * [Unit Price] > 2000)
+)
+
+--Query 14
+SELECT	[Order ID], ISNULL(DATEDIFF(day, [Order Date], [Shipped Date]), 111) AS [Delay Days]
+FROM	Orders
+ORDER BY [Delay Days] DESC
+
+--Query 15
+SELECT	P.ID, P.[Product Name]
+FROM	Products P
+WHERE	EXISTS 
+(
+	SELECT	*
+	FROM	[Order Details] OD
+	WHERE OD.[Product ID]=P.ID
+)
+
+--Query 16
+SELECT	E.ID, E.[First Name], C.ID AS Expr1, C.[First Name] AS Expr2
+FROM	Customers AS C 
+		INNER JOIN Employees AS E 
+		ON SOUNDEX(E.[First Name]) = SOUNDEX(C.[First Name])
+
+--Query 17
+SELECT	ID, [Product Name], [List Price]
+FROM	Products
+WHERE	Category = N'Beverages' AND 
+		[List Price] >= ALL
+        (
+			SELECT [List Price]
+			FROM   Products AS Products_1
+			WHERE (Category = N'Beverages')
+		)
+
+SELECT	TOP 1 ID, [Product Name], [List Price]
+FROM	Products
+WHERE	Category = N'Beverages'
+ORDER BY [List Price] DESC

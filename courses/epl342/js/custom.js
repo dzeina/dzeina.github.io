@@ -99,6 +99,6 @@ jQuery(document).ready(function($) {
 ga('create', 'UA-70658068-1', 'auto');
 ga('send', 'pageview');
 
-// SSL Redirection
-// if (window.location.protocol != "https:")
+//// SSL Redirection
+//if (window.location.protocol != "https:")
 //    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
