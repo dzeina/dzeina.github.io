@@ -110,16 +110,20 @@ ga('send', 'pageview');
 
 function validate() {
     
-    var clickHere = confirm("(OK) Load UCY site; (CANCEL) Load Replica site (7/12/2023) ?");
-   
+    var clickHere = confirm("This is a backup version of the website created on 7/12/2023. To load it press (OK). To load the live version  hosted at UCY press (CANCEL)");
+    
+    loc = "";
+    
     if (clickHere)
-        location = "https://www.cs.ucy.ac.cy/" . window.location.pathname;
+        loc = "https://www.cs.ucy.ac.cy/" . window.location.pathname;
     else
-        location = "https://dzeina.github.io/" . window.location.pathname;
+        loc = "https://dzeina.github.io/" . window.location.pathname;
     
-    window.location.href = location;
+    prompt(loc);
     
-    alert(window.location.href);
+    window.location.href = loc;
+    
+
 }
 
 
