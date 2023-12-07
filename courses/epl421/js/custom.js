@@ -108,24 +108,3 @@ ga('send', 'pageview');
 //
 //
 
-function validate() {
-    URL1 = "https://www.cs.ucy.ac.cy/~dzeina";
-    URL2 = "https://dzeina.github.io";
-    
-    /// Test if URL1 is available - if yes do the redirection automatic.
-    if ( window.location.hostname == URL2 ) {   
-        var request = new XMLHttpRequest();
-        request.open('GET', URL1, true);
-        request.onreadystatechange = function(){
-            if (request.readyState === 4){ //     The operation is complete.
-                if (request.status === 200) {
-                    //var clickHere = confirm("Redirection in progress " + URL1);
-                    window.location.href = URL1 + window.location.pathname;
-                }
-            }
-        };
-        request.send();
-    }
-    
-}
-    
