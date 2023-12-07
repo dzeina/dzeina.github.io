@@ -101,9 +101,9 @@ jQuery(document).ready(function($) {
  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-70658068-1', 'auto');
 ga('send', 'pageview');
-
-// SSL Redirection
-if (window.location.protocol != "https:")
-window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-
-
+//
+//// SSL Redirection
+//if (window.location.protocol != "https:")
+//window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+//
+//
