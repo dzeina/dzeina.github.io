@@ -120,7 +120,9 @@ function validate() {
     //alert(window.location.pathname);
     if (clickHere) {
         window.location.href = "https://dzeina.github.io" + window.location.pathname;
+        return;
     }
+    
     window.location.href = "https://www.cs.ucy.ac.cy/~dzeina" + window.location.pathname;
     
 }
