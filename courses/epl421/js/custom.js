@@ -107,3 +107,19 @@ ga('send', 'pageview');
 //window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 //
 //
+
+function validate() {
+    
+    var clickHere = confirm("(OK) Load UCY site; (CANCEL) Load Replica site (7/12/2023) ?");
+   
+    if (clickHere)
+        location = "https://www.cs.ucy.ac.cy/" . window.location.pathname;
+    else
+        location = "https://dzeina.github.io/" . window.location.pathname;
+    
+    window.location.href = location;
+    
+    alert(window.location.href);
+}
+
+
