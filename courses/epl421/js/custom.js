@@ -109,22 +109,23 @@ ga('send', 'pageview');
 //
 
 function validate() {
+    URL1 = "https://www.cs.ucy.ac.cy/~dzeina";
+    URL2 = "https://dzeina.github.io";
     
-    /// do nothing for main site.
-    if ( window.location.hostname == "www.cs.ucy.ac.cy") {
-       return;
+    /// Test if URL1 is available - if yes do the redirection automatic.
+    if ( window.location.hostname == URL2 ) {   
+        var request = new XMLHttpRequest();
+        request.open('GET', URL1, true);
+        request.onreadystatechange = function(){
+            if (request.readyState === 4){ //     The operation is complete.
+                if (request.status === 200) {
+                    //var clickHere = confirm("Redirection in progress " + URL1);
+                    window.location.href = URL1 + window.location.pathname;
+                }
+            }
+        };
+        request.send();
     }
-    
-    var clickHere = confirm("This is a backup version of the website created on 7/12/2023. To load it press (OK). To load the latest version if available click (CANCEL)");
-    
-    //alert(window.location.pathname);
-    if (clickHere) {
-        window.location.href = "https://dzeina.github.io" + window.location.pathname;
-        return;
-    }
-    
-    window.location.href = "https://www.cs.ucy.ac.cy/~dzeina" + window.location.pathname;
     
 }
-
-
+    
