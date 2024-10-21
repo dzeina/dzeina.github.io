@@ -108,3 +108,21 @@ ga('send', 'pageview');
 //
 //
 
+function validate() {
+    
+    /// do nothing for main site.
+    if ( window.location.hostname == "www.cs.ucy.ac.cy") {
+       return;
+    }
+    
+    var clickHere = confirm("This is a backup version of the website created on 7/12/2023. To load it press (OK). To load the latest version if available click (CANCEL)");
+    
+    //alert(window.location.pathname);
+    if (clickHere) {
+        window.location.href = "https://dzeina.github.io" + window.location.pathname;
+    }
+    window.location.href = "https://www.cs.ucy.ac.cy" + window.location.pathname;
+    
+}
+
+
