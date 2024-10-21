@@ -141,6 +141,7 @@ loadJS("https://www.googletagmanager.com/gtag/js?id=G-0PVHTKKEDV", true);
 /* </script> */
 
 
+
 // Check if HTTPS website is available. If yes, then load it.
 //////////////////////////////////////////////////////////////
 /*var sslpage = "https:" + window.location.href.substring(window.location.protocol.length);
@@ -167,4 +168,8 @@ if (window.location.protocol != "https:") {
 // if (window.location.protocol != "https:")
 //   window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 //////////////////////////////////////////////////////////////
+
+document.getElementById("myversion").innerHTML = "XAXA";
+
+//<font size=\"4\" color=\"red\"><b>Version: 21/10/2024</b></font></a>. Latest Version is <a href=\"https://www.cs.ucy.ac.cy/~dzeina/\">here</a>";
 
